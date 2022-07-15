@@ -1,0 +1,90 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <style>
+        table, th, td {
+            border:1px solid black;
+            padding: 5px;
+            font-size: 11px;
+        }
+    </style>
+    <script src="homework_7.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Eduard Lu</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:Order msdt:dt="string">19500.0000000000</mso:Order>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Eduard Lu</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x01010003690CF19A2AD341AF998B9545291412</mso:ContentTypeId>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>
+<body onload="onLoad();">
+    <div class="main-container" style="padding:20px; font-size:11px">
+        <div class="row">
+            <div class="left-container col-5">
+                <div class="form-container" style="margin-bottom:20px">     
+                    <input type="text" class="input-firstName" id="inputFirstName" placeholder="First name" style="display:block; margin-bottom:10px; width:300px; padding: 3px" onkeyup="displayFirstName()" />
+                    <input type="text" class="input-lastName" id="inputLastName" placeholder="Last name" style="display:block; margin-bottom:10px; width:300px; padding: 3px" onkeyup="displayLastName()" />
+                    <input type="text" class="input-gender" id="inputGender" placeholder="Gender" style="display:block; margin-bottom:10px; width:300px; padding: 3px" onkeyup="displayGender()" />
+                    <input type="text" class="input-age" id="inputAge" placeholder="Age" style="display:block; margin-bottom:10px; width:300px; padding: 3px" onkeyup="displayAge()" />
+            
+                    <button type="submit" class="btn btn-primary btn-sm">Save</button>
+                    <button type="submit" class="btn btn-warning btn-sm">Cancel</button>
+                </div>
+                <div class="action-history">
+                    <p>You are about to add <span id="spanDisplayFirstName">[FirstName]</span> <span id="spanDisplayLastName">[LastName]</span> who is a <span id="spanDisplayGender">[Gender]</span> and is <span id="spanDisplayAge">[Age]</span> years old.</p>
+                    <p>You have added <span class="default-firstName">Arci</span> <span class="default-lastName">Munoz</span> who is a <span class="default-gender">Female</span> and is <span class="default-age">17</span> years old.</p>
+                    <p>You have added <span class="default-firstName">Eduard</span> <span class="default-lastName">Lu</span> who is a <span class="default-gender">Male</span> and is <span class="default-age">20</span> years old.</p>
+                    <p>You have added <span class="default-firstName">Angelo</span> <span class="default-lastName">Manalili</span> who is a <span class="default-gender">Male</span> and is <span class="default-age">23</span> years old.</p>
+                    <p>You have added <span class="default-firstName">Mia</span> <span class="default-lastName">Gallano</span> who is a <span class="default-gender">Female</span> and is <span class="default-age">26</span> years old.</p>
+                </div>
+            </div>
+            <div class="right-container col-7">
+                <table class="persons-table">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Gender</th>
+                            <th>Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Arci</td>
+                            <td>Munoz</td>
+                            <td>Female</td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>Eduard</td>
+                            <td>Lu</td>
+                            <td>Male</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Angelo</td>
+                            <td>Manalili</td>
+                            <td>Male</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Mia</td>
+                            <td>Gallano</td>
+                            <td>Female</td>
+                            <td>26</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <style>
+        table, th, td {
+            border:1px solid black;
+            padding: 5px;
+        }
+
+        .left-container > .form-container {
+            margin: 5%;
+            padding: 1%;
+        }
+
+        .right-container > .persons-table-container {
+            margin: 2%;
+            padding: 1%;
+        }
+
+        .left-container > .form-container > input {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .btn-warning {
+            float: right;
+        }
+
+        .persons-table {
+            width: 100%;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Angelo Manalili</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:Order msdt:dt="string">33900.0000000000</mso:Order>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Angelo Manalili</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x01010003690CF19A2AD341AF998B9545291412</mso:ContentTypeId>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>
+<body>
+    <div class="main-container" style="padding:20px; font-size:small">
+        <div class="row">
+            <div class="left-container col-5">
+                <div class="form-container">     
+                    <input type="text" class="input-firstName" id="inputFirstName" placeholder="First name"/>
+                    <input type="text" class="input-lastName" id="inputLastName" placeholder="Last name"/>
+                    <input type="text" class="input-gender" id="inputGender" placeholder="Gender"/>
+                    <input type="text" class="input-age" id="inputAge" placeholder="Age"/>
+            
+                    <button type="submit" onclick="onAddPerson()" class="btn btn-primary btn-sm">Save</button>
+                    <button type="submit" onclick="onCancel()" class="btn btn-warning btn-sm">Cancel</button>
+                </div>
+            </div>
+            <div class="right-container col-7">
+                <div class="persons-table-container">     
+                    <table class="persons-table">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Gender</th>
+                                <th>Age</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+    
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="homework_8.js"></script>
+</body>
+</html>
+<html>
